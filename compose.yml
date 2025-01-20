@@ -13,7 +13,7 @@ services:
       - postgresdata:/var/lib/postgresql/data
   products-api:
     container_name: products-api
-    image: products-api:${TIMESTAMP}
+    image: products-api:1.0.0
     build:
       dockerfile: './Dockerfile'
       context: '.'
